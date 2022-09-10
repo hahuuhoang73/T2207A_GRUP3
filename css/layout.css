@@ -1,0 +1,66 @@
+
+body{
+    width: 680px;
+    height: 900px;
+    /*width: calc(25%-30px);*/
+    margin:   30px 600px;
+    /*border: 1px solid silver;*/
+    background-color: #dad4d4;
+    /*box-shadow: 2px 3px 4px silver;*/
+}
+
+header{
+    background-color: #08bb54;
+    /*height: 190px ;*/
+    /*width: 70px;*/
+    /*border-bottom: 1px solid rebeccapurple;*/
+}
+header .contec {
+      margin: 0 42px;
+    padding: 1px;
+    color: #fafafa;
+}
+
+span{
+    color: red;
+}
+.Firstname{
+    float: left;
+    margin:  12px 0;
+}
+.Lastname{
+    float: right;
+    margin: 12px 221px;
+}
+input[name=Firstname]{
+padding: 12px 51px;
+}
+input[name=Lastname]{
+    padding: 12px 51px;
+    margin: 0 15px;
+}
+.email {
+padding: 42px 0;
+}
+input[name=email] {
+    padding: 12px 200px;
+}
+input[name=phone] {
+    padding: 12px 200px;
+}
+button{
+    font-size: 20px;
+    padding: 12px 40px;
+    margin: 12px 0;
+    float: left;
+}
+.giua .giuatrang{
+    background-color: #fafafa;
+    height: 764px;
+    padding: 40px 46px;
+}
+
+
+
+
+
