@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+    font-size: 15px;
+
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.35;
+}
+li{
+    list-style: none;
+}
+
+.conternor{
+    width: 1100px;
+    float: none;
+    margin: 0 auto;
+}
+header{
+    background-color: #ffffff;
+    border-bottom: 1px solid rebeccapurple;
+    height: 70px;
+}
+nav{
+    background-color: #b6a7a7;
+    height: 70px;
+}
+header  .dautrang p {
+    float: left;
+    /*width: auto;*/
+    /*line-height: 200px;*/
+    width: auto ;
+    margin: 14px 0 ;
+    font-size: 25px;
+    font-family: 'Bungee Spice', cursive;
+}
+.phone ul {
+float: right;
+ /*padding: 0 15px;*/
+ /*   line-height: 22px;*/
+    margin: 15px 25px;
+    /*width:  60px;*/
+    font-size: 13px;
+}
+
+
+span{
+    color: red;
+    font-size: 16px;
+}
+.phone i{
+    float: right;
+    width: 20px;
+    margin: 2px 0;
+    line-height: 70px;
+    color: red;
+    font-size: 35px;
+}
+
+ .GIOHANG{
+     float: right;
+     line-height: 70px;
+     font-size: 15px;
+     margin: 5px 25px;
+     color: #b06400 ;
+
+ }
+
+.search{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search-tm{
+    width: 60%;
+    border: 3px solid #b06400;
+    border-right: none;
+    padding: 15px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #06854c;
+}
+
+.search-btn{
+    width: 50px;
+    height: 36px;
+    border: 1px solid #b06400;
+    background: #b06400;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.search-txt{
+    color: #ffffff;
+}
+.search-box{
+    width: 30%;
+    position: absolute;
+    float: right;
+    line-height: 70px;
+    left: 35%;
+    top: 2%;
+
+}

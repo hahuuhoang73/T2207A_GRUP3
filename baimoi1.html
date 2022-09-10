@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout</title>
+</head>
+<body>
+<form method="get" action="#">
+  <label>Full name</label>
+  <input type="text" required name="Full name" placeholder="Enter name..."/>
+  <label>Email</label>
+  <input type="email" required name="Email" placeholder="Enter email..."/>
+  <label>Password</label>
+  <input type="password" required name="Password" placeholder="Enter password..."/>
+  <label>Birthday</label>
+  <input type="date" name="Birthday" placeholder="Enter Birthday..."/>
+
+  <label>Gender</label>
+  <label><input type="radio" value="male" name="gender" />Nam</label>
+  <label> <input type="radio" value="female" name="gender" />Nữ</label>
+    <label><input type="radio" value="other" name="gender" />Khác</label>
+  <label><input type="checkbox" name="confrm"/>
+     Tôi đã đọc và đồng ý hoàn toàn hợp đồng
+  </label>
+  <label> My CV</label>
+  <input type="file" name="cv" placeholder="Nộp Cv...."/>
+<label>CYTI</label>
+  <select name="yourcity">
+    <option value="hanoi">HÀ NỘI</option>
+    <option value="vinhphuc">VĨNH PHÚC</option>
+    <option value="hanoi">TP.HCM</option>
+  </select>
+  <label>Tiểu sử bản thân</label>
+  <textarea name="motabanthan" rows="10" cols="30"></textarea>
+  <button type="submit">Sumbit</button>
+  <button type="reset">reset</button>
+  <button type="button">button</button>
+</form>
+</body>
+</html>
