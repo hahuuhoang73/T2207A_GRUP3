@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@500&family=Carter+One&family=DM+Sans&family=Dangrek&family=Libre+Baskerville&family=Reem+Kufi+Ink&family=Roboto&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,13 +24,30 @@ li{
     margin: 0 auto;
 }
 header{
-    background-color: #ffffff;
-    border-bottom: 1px solid #f5f2f2;
+
+    background: radial-gradient(circle, rgb(210, 201, 210) 0%, rgba(148,187,233,1) 100%);
+
+    /*border-bottom: 5px solid rgb(187, 110, 144);*/
     height: 70px;
 }
 nav{
-    background-color: #f5f2f2;
+
+    background: radial-gradient(circle, rgb(169, 164, 169) 0%, rgba(148,187,233,1) 100%);
+
     height: 70px;
+    /*border-bottom: 3px solid #dc64dc;*/
+}
+section{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+    height: 3950px;
+
+}
+footer{
+    height: 1000px;
+    background: rgb(64, 63, 68);
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,246,207,1) 0%, rgba(0,212,255,1) 100%);*/
 }
 header  .dautrang p {
     float: left;
@@ -59,14 +79,43 @@ header  .dautrang p {
      padding: 0 45px;
     font-weight: 600;
  }
- a {
+ .gioithieu a{
      text-decoration: none;
-     color: #1a0202;
+     color: #000000;
  }
- div.gioithieu:hover a{
-    color: #fa0000;
+
+  .mot a:hover{
+     color: red;
 
  }
+  .hai a:hover{
+    color: red;
+
+}
+.ba a:hover{
+    color: red;
+
+}
+.bon a:hover{
+    color: red;
+
+}
+.nam a:hover{
+    color: red;
+
+}
+.sau a:hover{
+    color: red;
+
+}
+.bay a:hover{
+    color: red;
+
+}
+.tam a:hover{
+    color: red;
+
+}
 span{
     color: #e83030;
 }
@@ -131,3 +180,502 @@ div.GIOHANG:hover  i{
     left: 40%;
     top: 2%;
 }
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    width: calc(21% - 35px) ;
+    float: right;
+    /*border: 1px solid red;*/
+    transition: all 300ms;
+    margin: 5px 8px;
+      background-color: #fafafa;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+ .card button {
+    border: none;
+
+    padding: 12px;
+
+    background-color: #000;
+    text-align: center;
+
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button :hover {
+    opacity: 0.7;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+ .card button a {
+     text-decoration: none;
+     color: white;
+ }
+/*NOTE*/
+
+.container{
+    margin:  auto;
+    width: auto;
+    float: none;
+}
+
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+
+}
+
+.mySlides{
+  padding: 25px 50px ;
+    margin: auto ;
+
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+section img{
+    width: 250px;
+}
+
+section h1{
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 25px;
+}
+
+section p{
+    margin: 1px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #828282;
+    font-weight: initial;
+    font-family: 'UTM Aptima';
+}
+
+section p span{
+    color: #808080;
+    font-size: 17px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* T-Shirt */
+.menuT-Shirt .menu_ts a{
+    max-width: 300px;
+    text-align: center;
+    width: calc(21% - 35px) ;
+    float: right;
+    /*border: 1px solid red;*/
+    transition: all 300ms;
+    margin: 8px 8px;
+    text-decoration: none;
+    padding: 5px 5px;
+
+}
+.menuT-Shirt .menu_ts a:hover{
+    transform: scale(1.01);
+    background-color: #F0FFF0;
+    box-shadow: 4px 4px 2px #A9A9A9;
+}
+.menu_ts button{
+    border: none;
+
+    padding: 12px;
+
+    /*background-color: #989494;*/
+    text-align: center;
+   color: #8a8a8a;
+    width: 92%;
+    font-size: 18px;
+}
+/* Polo */
+.menuPolo .menu_pl a{
+    max-width: 300px;
+    text-align: center;
+    width: calc(21% - 35px) ;
+    float: right;
+    /*border: 1px solid red;*/
+    transition: all 300ms;
+    margin: 8px 8px;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+.menuPolo .menu_pl a:hover{
+    transform: scale(1.01);
+    background-color: #F0FFF0;
+    box-shadow: 4px 4px 2px #A9A9A9;
+}
+.menuPolo button{
+    border: none;
+
+    padding: 12px;
+
+    /*background-color: #989494;*/
+    text-align: center;
+    color: #8a8a8a;
+    width: 92%;
+    font-size: 18px;
+}
+/* Sweater */
+.menuSweater .menu_sw a{
+    max-width: 300px;
+    text-align: center;
+    width: calc(21% - 35px) ;
+    float: right;
+    /*border: 1px solid red;*/
+    transition: all 300ms;
+    margin: 8px 8px;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+.menuSweater .menu_sw a:hover{
+    transform: scale(1.01);
+    background-color: #F0FFF0;
+    box-shadow: 4px 4px 2px #A9A9A9;
+}
+.menuSweater button{
+    border: none;
+
+    padding: 12px;
+
+    /*background-color: #989494;*/
+    text-align: center;
+    color: #8a8a8a;
+    width: 92%;
+    font-size: 18px;
+}
+/* Pants */
+.menuPants .menu_pt a{
+    max-width: 300px;
+    text-align: center;
+    width: calc(21% - 35px) ;
+    float: right;
+    /*border: 1px solid red;*/
+    transition: all 300ms;
+    margin: 8px 8px;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+.menuPants .menu_pt a:hover{
+    transform: scale(1.01);
+    background-color: #F0FFF0;
+    box-shadow: 4px 4px 2px #A9A9A9;
+}
+.menuPants .menu_pt button{
+    border: none;
+
+    padding: 12px;
+
+    /*background-color: #989494;*/
+    text-align: center;
+    color: #8a8a8a;
+    width: 92%;
+    font-size: 18px;
+}
+/* Shoes */
+.menuShoes .menu_sh a{
+    max-width: 300px;
+    text-align: center;
+    width: calc(21% - 35px) ;
+    float: right;
+    /*border: 1px solid red;*/
+    transition: all 300ms;
+    margin: 8px 8px;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+.menuShoes .menu_sh a:hover{
+    transform: scale(1.01);
+    background-color: #F0FFF0;
+    box-shadow: 4px 4px 2px #A9A9A9;
+}
+.menuShoes button{
+    border: none;
+
+    padding: 12px;
+
+    /*background-color: #989494;*/
+    text-align: center;
+    color: #8a8a8a;
+    width: 92%;
+    font-size: 18px;
+}
+/* Bag  % Wallet */
+.menuBag .menu_bg a{
+    max-width: 300px;
+    text-align: center;
+    width: calc(21% - 35px) ;
+    float: right;
+    /*border: 1px solid red;*/
+    transition: all 300ms;
+    margin: 8px 8px;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+.menuBag .menu_bg a:hover{
+    transform: scale(1.01);
+    background-color: #F0FFF0;
+    box-shadow: 4px 4px 2px #A9A9A9;
+}
+.menuBag button{
+    border: none;
+
+    padding: 12px;
+
+    /*background-color: #989494;*/
+    text-align: center;
+    color: #8a8a8a;
+    width: 92%;
+    font-size: 18px;
+}
+/* Footer */
+.footer-distributed{
+    /*margin: 650px auto;*/
+    /*width: 1430px;*/
+    float: none;
+    background: rgb(64, 63, 68);
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,246,207,1) 0%, rgba(0,212,255,1) 100%);*/
+    background-clip: border-box;
+    box-sizing: border-box;
+    margin-bottom: 90px;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left{
+    width: 40%;
+}
+
+/* The company logo */
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  lightseagreen;
+}
+
+/* Footer links */
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  lightseagreen;
+    text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before{
+    content: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/*anh the*/
+ .anhmoi .card-h {
+     max-width: 300px;
+     text-align: center;
+     width: calc(21% - 35px) ;
+     float: right;
+     /*border: 1px solid red;*/
+     transition: all 300ms;
+     margin: 8px 8px;
+     text-decoration: none;
+     padding: 5px 5px;
+
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+ a:hover {
+    opacity: 0.7;
+}
+.card-h a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.card-h img{
+    width: 100%;
+    height: 250px;
+}
+.card-h{
+    line-height: 40px;
+}
+.anhmoi .card-h:hover{
+    transform: scale(1.01);
+    background-color: #F0FFF0;
+    box-shadow: 4px 4px 2px #A9A9A9;
+}
+
