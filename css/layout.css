@@ -4,7 +4,7 @@ body{
     height: 900px;
     /*width: calc(25%-30px);*/
     margin:   30px 600px;
-    /*border: 1px solid silver;*/
+    border: 1px solid red;
     background-color: #dad4d4;
     /*box-shadow: 2px 3px 4px silver;*/
 }

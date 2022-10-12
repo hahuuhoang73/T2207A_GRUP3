@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>Trang Chủ - Code One Min</title>
   <link rel="stylesheet" href="css/thoitrangmoi.css">
+  <link rel="stylesheet" href="lsb/meganenu/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <body>
 <header >
   <div class="conternor">
@@ -15,7 +18,8 @@
       <p>CODE ONE MIN</p>
     </div>
     <div CLASS="GIOHANG">
-      <span><a href="#" ><i class="fa-solid fa-bag-shopping"></i></a></span>
+      <span class="longin"><a href="dangnhap.html" ><i class="fa-solid fa-user"></i></a></span>
+      <span class="giohangh"><a href="#" ><i class="fa-solid fa-bag-shopping"></i></a></span>
       <a href="#" ><p><b>GIỎ HÀNG / <span id="cong">0</span></b></p></a>
 
     </div>
@@ -39,21 +43,65 @@
   </div>
 </header>
 <nav>
-  <div class="conternor">
-    <div class="gioithieu">
+  <div class="menu-container">
+    <div class="menu">
       <ul>
-        <li class="mot"><a href="#">Trang Chủ</a></li>
-        <li class="hai"><a href="#">Sản phẩm mới</a></li>
-        <li class="ba"><a href="#">Áo quần</a></li>
-        <li class="bon"><a href="#">Giày</a></li>
-        <li class="nam"><a href="https://hoangdepzai.herokuapp.com/hethang.html#">Dép</a></li>
-        <li class="sau"><a href="#">Sale</a></li>
-        <li class="bay"><a href="#">Phụ kiện</a></li>
-        <li class="tam"><a href="#">Balo, túi</a></li>
-      </ul>
+        <li><a href="phukien.html">Phụ Kiện</a></li>
+        <li><a href="#">Giày, dép</a>
+          <ul>
+            <li><a href="#">Giày</a>
+              <ul>
+                <li><a href="giaymlb.html">Giày MLB</a></li>
+                <li><a href="giaynike.html">Giày NIKE</a></li>
+                <li><a href="giayjd.html">JORDAN</a></li>
+                <li><a href="giayvans.html">Giày VANS</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dép</a>
+              <ul>
+                <li><a href="dmlb.html">MLB</a></li>
+                <li><a href="dnike.html">NIKE</a></li>
 
+
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+        <li><a href="balo.html">Balo,túi</a>
+
+        </li>
+
+        <li><a href="#">Áo Quần</a>
+          <ul>
+            <li><a href="#">Áo</a>
+              <ul>
+                <li><a href="Clowz.html">CLOWNZ T-Shirt</a></li>
+                <li><a href="polo.html">Polo</a></li>
+                <li><a href="aohoodie.html"> Sweater & Hoodie</a></li>
+
+              </ul>
+            </li>
+
+            <li><a href="#">Quần</a>
+              <ul>
+                <li><a href="quanjean.html">Quần JEAN</a></li>
+                <li><a href="quanau.html">Quần Âu Nam</a></li>
+                <li><a href="quanshort.html">Quần Short</a></li>
+
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+        <li><a href="sale.html">Sale</a></li>
+        <li><a href="sanphammoi.html">Sản Phẩm Mới</a>
+        <li><a href="thoitrangmoi.html">Trang Chủ</a></li>
+      </ul>
     </div>
   </div>
+
+
 </nav>
 <section class="container">
 
@@ -80,16 +128,17 @@
   </div>
 <!--  //T-shirt-->
   <div class="menuT-Shirt">
-    <h1>CLOWNZ T-Shirt</h1>
+    <h1 id="ao">CLOWNZ T-Shirt</h1>
 
     <div class="menu_ts">
-      <a href="#">
-        <img src="img/t1.png">
-        <p>C LETTER T-SHIRT</p>
+
+       <a href="chitiet.html"><img src="img/t1.png">
+        <p >C LETTER T-SHIRT</p>
         <p><span>379.000₫</span></p>
 <!--      <p><button><a href="#" onclick="tongcong()">+ Thêm vào giỏ hàng</a></button></p>-->
         <p><button onclick="tongcong()"> Thêm vào giỏ hàng</button></p>
-      </a>
+
+       </a>
 <!--      <p><button>+ Thêm vào giỏ hàng</button></p>-->
     </div>
 
@@ -107,6 +156,7 @@
         <img src="img/t3.png">
         <p>KING OF SCHOOL T-SHIRT</p>
         <p><span>349.000₫</span></p>
+
         <p><button onclick="tongcong()"> Thêm vào giỏ hàng</button></p>
 
       </a>
@@ -136,7 +186,7 @@
       <h1>TEELAB - Polo</h1>
 
       <div class="menu_pl">
-        <a href="#">
+        <a href="chitiet3.html">
           <img src="img/pl1.png" >
           <p>Teelab Kitten Embroidered</p>
           <p><span>220.000₫</span></p>
@@ -187,7 +237,7 @@
       <h1>IMA GOD BREAKER - Sweater</h1>
 
       <div class="menu_sw">
-        <a href="#">
+        <a href="chitiet2.html">
           <img src="img/sw_1.png" >
           <p>iGB Blue Graffiti Sweater</p>
           <p><span>410.000₫</span></p>
@@ -237,7 +287,7 @@
 
       <h1>Pants</h1>
 
-      <div class="menu_pt">
+      <div class="menu_pt" id="quan">
         <a href="#">
           <img src="img/pt1.jpg" >
           <p>Polyester - THE BAD GOD</p>
@@ -286,9 +336,9 @@
     <!-- Giay -->
     <div class="menuShoes">
 
-      <h1>Shoes</h1>
+      <h1 >Shoes</h1>
 
-      <div class="menu_sh">
+      <div class="menu_sh" id="giay">
         <a href="#">
           <img src="img/g_1.png" >
           <p>Vans Slip On</p>
@@ -334,14 +384,14 @@
       </div>
     </div>
 
-    <div class="menuBag">
+    <div class="menuBag"  >
 
-      <h1>BAG & WALLET</h1>
+      <h1 >BAG & WALLET</h1>
 
-      <div class="menu_bg">
+      <div class="menu_bg" id="balo">
         <a href="#">
           <img src="img/bg1.jpg" >
-          <p>Vietgangz - Mini Bag</p>
+          <p >Vietgangz - Mini Bag</p>
           <p><span>295.000₫</span></p>
           <p><button onclick="tongcong()"> Thêm vào giỏ hàng</button></p>
         </a>
@@ -413,7 +463,7 @@
       <div class="menu_bg">
         <a href="#">
           <img src="img/w4.png" >
-          <p>SLYDER - REFLECTIVE SHORT</p>
+          <p>SLYDER - REFLECTIVE </p>
           <p><span>199.000₫</span></p>
           <p><button onclick="tongcong()"> Thêm vào giỏ hàng</button></p>
         </a>
@@ -431,136 +481,95 @@
   </div>
 </section>
 <footer>
-<div  class="footer-distributed">
-  <div class="footer-left">
+  <div  class="footer-distributed">
+    <div class="footer-left">
 
-    <h3>CODE<span>One Min</span></h3>
+      <h3>CODE<span>One Min</span></h3>
 
-    <p class="footer-links">
-      <a href="#" class="link-1">Home</a>
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
 
-      <a href="#">Blog</a>
+        <a href="#">Blog</a>
 
-      <a href="#">Pricing</a>
+        <a href="#">Pricing</a>
 
-      <a href="#">About</a>
+        <a href="#">About</a>
 
-      <a href="#">Faq</a>
+        <a href="#">Faq</a>
 
-      <a href="#">Contact</a>
-    </p>
+        <a href="#">Contact</a>
+      </p>
+      <p class="kinhnhiem">VỚI HƠN 25 NĂM CHUYÊN PHÂN PHỐI SỈ, LẺ HÀNG THỜI TRANG CHÍNH HÃNG TRÊN TOÀN QUỐC.</p>
+      <div class="footer-icons">
 
-    <p class="footer-company-name">CODE One Min © 2022</p>
-  </div>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
 
-  <div class="footer-center">
+      </div>
+      <br/>
+      <br/>
+      <br/>
 
-    <div>
-      <i class="fa fa-map"></i>
-      <p><span>Số 8A, Tôn Thất Thuyết, Mỹ Đình, Hà Nội</span></p>
+
     </div>
+    <div class="footer-center">
 
-    <div>
-      <i class="fa fa-phone"></i>
-      <p>+84.123.456.789</p>
-    </div>
+      <div>
+        <i class="fa fa-map"></i>
+        <p><span>Số 8A, Tôn Thất Thuyết, Mỹ Đình, Hà Nội</span></p>
+      </div>
 
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="mailto:codeonemin@gmail.com">codeonemin@gmail.com</a></p>
-    </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+84.123.456.789</p>
+      </div>
 
-  </div>
-
-  <div class="footer-right">
-
-    <p class="footer-company-about">
-      <span>About the company</span>
-      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-    </p>
-
-    <div class="footer-icons">
-
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:codeonemin@gmail.com">codeonemin@gmail.com</a></p>
+      </div>
 
     </div>
 
-  </div>
-</div>
-  <div class="anhmoi">
-  <div class="card-h">
-    <img src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/305398939_216555074055710_801811853571461699_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=TKWk7GxNTdsAX8rt1xa&_nc_ht=scontent.fsgn2-6.fna&oh=00_AT9nJCDqxEpNCTIruutHVb3qKFOsNeWO_5DsU77_E_UBqg&oe=632B2233" alt="John" >
-    <h1>Duc Anh</h1>
-    <p class="title">Thành Viên</p>
-    <p>FPT Aptech University</p>
-    <div class="anhthe">
-      <a href="#"><i class="fa-solid fa-money-check-dollar"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100071036568607"><i class="fa-brands fa-facebook"></i></a>
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>ĐĂNG KÝ NHẬN TIN</span>
+        Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.
+      </p>
+      <br/>
+      <form >
+
+        <input type="text"  required placeholder="Nhập email của bạn tại đây..." name="email" >
+        <br/>
+        <br/>
+        <button type="submit" class="dangki">ĐĂNG KÍ NGAY </button>
+      </form>
+
+
     </div>
+    <div class="trungtam">
+      <ul>
+        <li class="footer-company-name">CODE One Min © 2022. Thiết kế và phát triển bởi CODEONEMIN</li>
+        <li class="footer-links1">
 
-  </div>
+          <a href="gioithiue.html" class="link-1">Giới Thiệu</a>
 
-  <div class="card-h">
-    <img src="img/son.jpg" alt="John" >
-    <h1>Manh Son</h1>
-    <p class="title">Thành Viên</p>
-    <p>FPT Aptech University</p>
-    <div class="anhthe">
-      <a href="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/306382267_801151857679395_171918222771599927_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=-rvxQ4Eq4n0AX8AYJiD&_nc_ht=scontent.fhan2-4.fna&oh=03_AVLL12y3BCFc7EeaN3BDijA7PUheE7FYnvpGUazs1KQt1w&oe=634DA10D"><i class="fa-solid fa-money-check-dollar"></i></a>
-      <a href="https://www.tiktok.com/@ngomanhson23"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.instagram.com/manhson04/"><i class="fa-brands fa-instagram"></i></i></a>
-      <a href="https://www.facebook.com/NgoManhSon.23"><i class="fa-brands fa-facebook"></i></a>
+          <a href="chinhsach.html">Chính Sách sử dụng</a>
+
+          <a href="baomat.html">Chính sách bảo mật</a>
+        </li>
+
+
+      </ul>
     </div>
-
   </div>
 
-  <div class="card-h">
-    <img src="img/hoang1.jpg" alt="John" >
-    <h1>Ha Hoang</h1>
-    <p class="title">Trưởng Nhóm Dự Án</p>
-    <p>FPT Aptech University</p>
-    <div class="anhthe">
-      <a href="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/307586109_7981876931887423_5293484232060366927_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=l4jrDyVEmEcAX9k8P2H&_nc_ht=scontent.fhan2-4.fna&oh=03_AVL6cWfUlxWe_tYcN_4AEk_r0XnUv1SkX2p_U0vm8ZDL8A&oe=634D7E11"><i class="fa-solid fa-money-check-dollar"></i></a>
-      <a href="https://www.tiktok.com/@ha_hoang_jr?_t=8Vpg7hFO9YH&_r=1&fbclid=IwAR12Od8vPm6XFSs6WPzh975wJAFc63uyZH7Dy2kxukq85uQaJ7YlIBz4Z2E"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.instagram.com/hhh_jr10/"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.facebook.com/hoang.hahuy.7982780"><i class="fa-brands fa-facebook"></i></a>
-    </div>
-
-  </div>
-
-  <div class="card-h">
-    <img src="img/vu1.jpg" alt="John" >
-    <h1>Phung Vu</h1>
-    <p class="title">Thành Viên</p>
-    <p>FPT Aptech University</p>
-    <div class="anhthe">
-      <a href="https://www.facebook.com/messenger_media?thread_id=100042003063575&attachment_id=627151899046319&message_id=mid.%24cAAAB_TCt3daJiuyMFGDWac5ojJyH"><i class="fa-solid fa-money-check-dollar"></i></a>
-      <a href="https://www.tiktok.com/@vuphung1704?_t=8Vpm2eTxjBi&_r=1&fbclid=IwAR1H-zTC9M5-lMjmXkBhN-tF1O5bdIksOezxSJqYKm-BwTZyz2TwGDOleOM"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.instagram.com/p.vu_04/"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.facebook.com/phung.vu.54772728"><i class="fa-brands fa-facebook"></i></a>
-    </div>
-
-  </div>
-  <div class="card-h">
-    <img src="img/cuong.jpg" alt="John" >
-    <h1>Viet Cuong</h1>
-    <p class="title">Thành Viên </p>
-    <p>FPT Aptech University</p>
-    <div class="anhthe">
-      <a href="https://www.facebook.com/messenger_media?thread_id=100042003063575&attachment_id=627151899046319&message_id=mid.%24cAAAB_TCt3daJiuyMFGDWac5ojJyH"><i class="fa-solid fa-money-check-dollar"></i></a>
-      <a href="https://www.tiktok.com/@vuphung1704?_t=8Vpm2eTxjBi&_r=1&fbclid=IwAR1H-zTC9M5-lMjmXkBhN-tF1O5bdIksOezxSJqYKm-BwTZyz2TwGDOleOM"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.instagram.com/p.vu_04/"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100052629109608"><i class="fa-brands fa-facebook"></i></a>
-    </div>
-
-  </div>
-  </div>
 </footer>
 <script type="text/javascript" src="js/thoitrang.js"></script>
+<script type="text/javascript" src="lsb/meganenu/js/vendor/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="lsb/meganenu/js/megamenu.js"></script>
 </body>
 </html>

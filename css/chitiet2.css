@@ -6,11 +6,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    background-color: #fafafa;
+    background-color: #fff;
     font-size: 15px;
     font-family: sans-serif;
-    text-align: left;
     font-weight: 400;
     line-height: 1.35;
 }
@@ -25,10 +25,14 @@ li{
 }
 header{
 
-    background: radial-gradient(circle, rgb(210, 201, 210) 0%, rgba(148,187,233,1) 100%);
 
     /*border-bottom: 5px solid rgb(187, 110, 144);*/
     height: 70px;
+}
+footer{
+    height: 100px;
+    background: rgb(64, 63, 68);
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,246,207,1) 0%, rgba(0,212,255,1) 100%);*/
 }
 header  .dautrang p {
     float: left;
@@ -48,69 +52,24 @@ header  .dautrang p {
     /*   line-height: 22px;*/
     margin: 14px 25px;
     font-size: 15px;
+    color: #fa0000;
 
 }
-.gioithieu ul  {
-    list-style: none;
-    float: left;
-}
-.gioithieu ul li {
-    float: left;
-    line-height: 80px;
-    padding: 0 45px;
-    font-weight: 600;
-}
-.gioithieu a{
-    text-decoration: none;
-    color: #000000;
-}
 
-.mot a:hover{
-    color: red;
-
-}
-.hai a:hover{
-    color: red;
-
-}
-.ba a:hover{
-    color: red;
-
-}
-.bon a:hover{
-    color: red;
-
-}
-.nam a:hover{
-    color: red;
-
-}
-.sau a:hover{
-    color: red;
-
-}
-.bay a:hover{
-    color: red;
-
-}
-.tam a:hover{
-    color: red;
-
-}
-span{
-    color: #e83030;
-}
 
 .GIOHANG i{
     line-height: 15px;
     float: right;
-    margin: 15px 0;
+    margin: 15px 5px;
     color: #fa0000;
     border: 10px solid #d7d3d3;
     border-radius: 50px 50px 50px 50px;
     background: #d7d3d3;
 }
-div.GIOHANG:hover  i{
+div.GIOHANG .giohangh:hover  i{
+    transform: scale(1.6);
+}
+div.GIOHANG .longin:hover  i{
     transform: scale(1.6);
 }
 .GIOHANG p{
@@ -148,7 +107,6 @@ div.GIOHANG:hover  i{
     border-radius: 0 15px 15px 0;
     cursor: pointer;
     font-size: 18px;
-
 }
 .search-txt{
     color: #1a0202;
@@ -158,35 +116,127 @@ div.GIOHANG:hover  i{
     position: absolute;
     float: right;
     line-height: 70px;
-    left: 40%;
+    left: 35%;
     top: 2%;
+}
+section{
+    height: 1130px;
 }
 nav{
 
-    background: radial-gradient(circle, rgb(169, 164, 169) 0%, rgba(148,187,233,1) 100%);
+    background-color: #d9d4d4;
 
     height: 70px;
     /*border-bottom: 3px solid #dc64dc;*/
 }
-section{
-    background-color: #919494;
+.card{
+    float:right;
+}
+/*NOTE*/
 
-    height: 900px;
+.container{
+    margin: 35px auto;
+    width: 1455px;
+    float: none;
 }
 
- .hethang{
-background-color: #919494;
-  padding: 300px;
-     margin: auto ;
-     text-align: center;
-font-size: 50px;
+.container .photo img{
+    margin: 0 240px;
+}
+.container .photo-2 img{
+    width: 380px;
+    margin: 0 470px;
+}
+
+.container .main{
+    position: absolute;
+    top: 140px;
+    width: 390px;
+    left: 1129px;
+    background-color: #fff;
+    height: 1150px;
+    margin: 35px auto;
+}
+.container .main p{
+    font-size: 25px;
+    margin: 10px 15px;
+    color: #828282;
+    font-weight: 500;
+    font-family: 'UTM Aptima';
 
 }
-footer{
-    height: 200px;
-    background: rgb(64, 63, 68);
-    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,246,207,1) 0%, rgba(0,212,255,1) 100%);*/
+.container .main p span{
+    font-size: 25px;
+    margin: 10px 15px;
+    color: #000;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serifs;
 }
+hr {
+    border: none;
+    border-top: 1px dotted black;
+    width: 78%;
+    margin: 0 12px;
+}
+
+p button{
+    border: none;
+    padding: 15px;
+    text-align: center;
+    color: #8a8a8a;
+    font-size: 18px;
+    background-color: #000;
+    position: absolute;
+    top: 495px;
+    width: 380px;
+    left: 1129px;
+    height: 48px;
+    margin: 35px auto;
+}
+.size p{
+    position: absolute;
+    width: 390px;
+    top: 580px;
+    left: 1129px;
+    font-size: 20px;
+}
+.size img{
+    position: absolute;
+    width: 380px;
+    top: 620px;
+    left: 1129px;
+    border: solid #000 1px;
+}
+.photo{
+    width: 250px;
+
+}
+.photo img{
+    width: 100px;
+    border: solid #000 1px;
+}
+.photo-2{
+    width: 250px;
+    position: absolute;
+    top: 177px;
+}
+.photo-2 img{
+    width: 550px;
+    border: solid #000 1px;
+}
+
+.describe{
+    position: absolute;
+    width: 390px;
+    top: 1030px;
+    left: 1129px;
+    line-height: 40px;
+    color: #6c757d;
+}
+
+
+
+/* Footer */
 .footer-distributed{
     /*margin: 650px auto;*/
     /*width: 1430px;*/
@@ -249,13 +299,42 @@ footer{
 .footer-distributed .footer-center{
     width: 35%;
 }
+.footer-distributed .kinhnhiem{
+    color: #fafafa;
+    width: 300px;
+    line-height: 1.35;
+}
+.footer-distributed .footer-company-name{
+    color: #e89220;
+}
+.footer-distributed .trungtam  ul li{
 
+
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-distributed .footer-links1 a{
+    color: #e89220;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.footer-distributed .footer-links1 a:before{
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+
+
+    display: inline-block;
+    padding-right: 5px;
+}
 .footer-distributed .footer-center i{
     background-color:  #33383b;
     color: #ffffff;
     font-size: 25px;
     width: 38px;
-    height: 38px;
+
     border-radius: 50%;
     text-align: center;
     line-height: 42px;
@@ -301,6 +380,9 @@ footer{
 .footer-distributed .footer-links .link-1:before{
     content: none;
 }
+.footer-distributed .footer-links1 .link-1:before{
+    content: none;
+}
 
 /* Footer Right */
 .footer-distributed .footer-right{
@@ -309,8 +391,8 @@ footer{
 
 .footer-distributed .footer-company-about{
     line-height: 20px;
-    color:  #92999f;
-    font-size: 13px;
+    color: #ffffff;
+    font-size: 15px;
     font-weight: normal;
     margin: 0;
 }
@@ -330,7 +412,7 @@ footer{
 .footer-distributed .footer-icons a{
     display: inline-block;
     width: 35px;
-    height: 35px;
+
     cursor: pointer;
     background-color:  #33383b;
     border-radius: 2px;
@@ -340,4 +422,22 @@ footer{
     line-height: 35px;
     margin-right: 3px;
     margin-bottom: 5px;
+}
+span{
+    color: #fa0000;
+}
+input[name=email] {
+    padding: 12px 0px;
+    width: 100%;
+}
+button[type="submit"][class="dangki"]{
+    padding: 12px 5px;
+    background-color: #f1ad07;
+    color: #fafafa;
+    font-weight: 600;
+}
+button[type="submit"]{
+
+    background-color: #f1ad07;
+
 }

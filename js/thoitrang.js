@@ -1,9 +1,29 @@
 var t=1;
+var x=0;
 function tongcong(){
     var cong=document.getElementById("cong");
     cong.innerText=t;
     t++;
 }
+
+function tongcong1() {
+    if (x < 6) {
+        var cong = document.getElementById("cong1");
+        cong.innerText = x;
+        x++;
+    }
+}
+function tongcong2() {
+    if (x >0){
+        var cong1 = document.getElementById("cong1");
+        cong1.innerText = x-1;
+        x--;
+    }
+}
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

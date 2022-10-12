@@ -14,6 +14,9 @@ body{
     font-weight: 400;
     line-height: 1.35;
 }
+img{
+    max-width: 100%;
+}
 li{
     list-style: none;
 }
@@ -25,27 +28,25 @@ li{
 }
 header{
 
-    background: radial-gradient(circle, rgb(210, 201, 210) 0%, rgba(148,187,233,1) 100%);
+
 
     /*border-bottom: 5px solid rgb(187, 110, 144);*/
     height: 70px;
 }
 nav{
 
-    background: radial-gradient(circle, rgb(169, 164, 169) 0%, rgba(148,187,233,1) 100%);
+    background-color: #d9d4d4;
 
     height: 70px;
     /*border-bottom: 3px solid #dc64dc;*/
 }
 section{
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 
-    height: 3950px;
+    height: 3800px;
 
 }
 footer{
-    height: 1000px;
+    height: 100px;
     background: rgb(64, 63, 68);
     /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,246,207,1) 0%, rgba(0,212,255,1) 100%);*/
 }
@@ -55,7 +56,7 @@ header  .dautrang p {
     /*line-height: 200px;*/
     color: #014b01;
     /*width: 68px ;*/
-   padding: 15px 45px;
+    padding: 15px 45px;
     font-family: 'Bungee Spice', cursive;
 
     font-size: 30px;
@@ -69,26 +70,26 @@ header  .dautrang p {
     font-size: 15px;
 
 }
- .gioithieu ul  {
+.gioithieu ul  {
     list-style: none;
-     float: left;
+    float: left;
 }
- .gioithieu ul li {
-     float: left;
-     line-height: 80px;
-     padding: 0 45px;
+.gioithieu ul li {
+    float: left;
+    line-height: 70px;
+    padding: 0 45px;
     font-weight: 600;
- }
- .gioithieu a{
-     text-decoration: none;
-     color: #000000;
- }
+}
+.gioithieu a{
+    text-decoration: none;
+    color: #000000;
+}
 
-  .mot a:hover{
-     color: red;
+.mot a:hover{
+    color: red;
 
- }
-  .hai a:hover{
+}
+.hai a:hover{
     color: red;
 
 }
@@ -123,20 +124,23 @@ span{
 .GIOHANG i{
     line-height: 15px;
     float: right;
-    margin: 15px 0;
+    margin: 15px 5px;
     color: #fa0000;
     border: 10px solid #d7d3d3;
     border-radius: 50px 50px 50px 50px;
     background: #d7d3d3;
 }
-div.GIOHANG:hover  i{
+div.GIOHANG .giohangh:hover  i{
+    transform: scale(1.6);
+}
+div.GIOHANG .longin:hover  i{
     transform: scale(1.6);
 }
 .GIOHANG p{
     float: right;
     line-height: 70px;
     margin: 0 15px;
-   color: #dcb66c;
+    color: #dcb66c;
     font-size: 15px;
 }
 
@@ -171,6 +175,7 @@ div.GIOHANG:hover  i{
 }
 .search-txt{
     color: #1a0202;
+
 }
 .search-box{
     width: 30%;
@@ -180,7 +185,7 @@ div.GIOHANG:hover  i{
     left: 40%;
     top: 2%;
 }
-  .card{
+.card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     text-align: center;
@@ -189,7 +194,7 @@ div.GIOHANG:hover  i{
     /*border: 1px solid red;*/
     transition: all 300ms;
     margin: 5px 8px;
-      background-color: #fafafa;
+    background-color: #fafafa;
 }
 
 .price {
@@ -197,7 +202,7 @@ div.GIOHANG:hover  i{
     font-size: 22px;
 }
 
- .card button {
+.card button {
     border: none;
 
     padding: 12px;
@@ -215,27 +220,27 @@ div.GIOHANG:hover  i{
 .card:hover{
     transform: scale(1.05);
 }
- .card button a {
-     text-decoration: none;
-     color: white;
- }
+.card button a {
+    text-decoration: none;
+    color: white;
+}
 /*NOTE*/
 
 .container{
-    margin:  auto;
-    width: auto;
+    margin:  -5px 15px;
+    width: 1455px;
     float: none;
 }
 
 .slideshow-container{
-    max-width: 100%;
+    max-width: 1050px;
     position: relative;
     margin: auto;
 
 }
 
 .mySlides{
-  padding: 25px 50px ;
+    padding: 25px 50px ;
     margin: auto ;
 
 }
@@ -315,77 +320,72 @@ section p span{
 
 /* T-Shirt */
 .menuT-Shirt .menu_ts a{
-    max-width: 300px;
-    text-align: center;
-    width: calc(21% - 35px) ;
-    float: right;
+    text-align: left;
+
+    float: left;
     /*border: 1px solid red;*/
     transition: all 300ms;
-    margin: 8px 8px;
+    margin: 5px 15px;
     text-decoration: none;
     padding: 5px 5px;
 
 }
 .menuT-Shirt .menu_ts a:hover{
     transform: scale(1.01);
-    background-color: #F0FFF0;
-    box-shadow: 4px 4px 2px #A9A9A9;
+    background-color: #D3D3D3;
+
 }
 .menu_ts button{
     border: none;
 
     padding: 12px;
 
-    /*background-color: #989494;*/
+    background-color: #ffffff;
     text-align: center;
-   color: #8a8a8a;
-    width: 92%;
+    color: #8a8a8a;
+    width: 100%;
     font-size: 18px;
 }
 /* Polo */
 .menuPolo .menu_pl a{
-    max-width: 300px;
-    text-align: center;
-    width: calc(21% - 35px) ;
-    float: right;
+    text-align: left;
+
+    float: left;
     /*border: 1px solid red;*/
     transition: all 300ms;
-    margin: 8px 8px;
+    margin: 5px 15px;
     text-decoration: none;
     padding: 5px 5px;
 }
 .menuPolo .menu_pl a:hover{
     transform: scale(1.01);
-    background-color: #F0FFF0;
-    box-shadow: 4px 4px 2px #A9A9A9;
+    background-color: #D3D3D3;
 }
 .menuPolo button{
     border: none;
 
     padding: 12px;
 
-    /*background-color: #989494;*/
+    background-color: #ffffff;
     text-align: center;
     color: #8a8a8a;
-    width: 92%;
+    width: 100%;
     font-size: 18px;
 }
 /* Sweater */
 .menuSweater .menu_sw a{
-    max-width: 300px;
-    text-align: center;
-    width: calc(21% - 35px) ;
-    float: right;
+    text-align: left;
+
+    float: left;
     /*border: 1px solid red;*/
     transition: all 300ms;
-    margin: 8px 8px;
+    margin: 5px 15px;
     text-decoration: none;
     padding: 5px 5px;
 }
 .menuSweater .menu_sw a:hover{
     transform: scale(1.01);
-    background-color: #F0FFF0;
-    box-shadow: 4px 4px 2px #A9A9A9;
+    background-color: #D3D3D3;
 }
 .menuSweater button{
     border: none;
@@ -393,93 +393,90 @@ section p span{
     padding: 12px;
 
     /*background-color: #989494;*/
-    text-align: center;
+    text-align: left;
     color: #8a8a8a;
-    width: 92%;
+    width: 100%;
     font-size: 18px;
 }
 /* Pants */
 .menuPants .menu_pt a{
-    max-width: 300px;
-    text-align: center;
-    width: calc(21% - 35px) ;
-    float: right;
+    text-align: left;
+
+    float: left;
     /*border: 1px solid red;*/
     transition: all 300ms;
-    margin: 8px 8px;
+    margin: 5px 15px;
     text-decoration: none;
     padding: 5px 5px;
 }
 .menuPants .menu_pt a:hover{
     transform: scale(1.01);
-    background-color: #F0FFF0;
-    box-shadow: 4px 4px 2px #A9A9A9;
+    background-color: #D3D3D3;
+
 }
 .menuPants .menu_pt button{
     border: none;
 
     padding: 12px;
 
-    /*background-color: #989494;*/
+    background-color: #ffffff;
     text-align: center;
     color: #8a8a8a;
-    width: 92%;
+    width: 100%;
     font-size: 18px;
 }
 /* Shoes */
 .menuShoes .menu_sh a{
-    max-width: 300px;
-    text-align: center;
-    width: calc(21% - 35px) ;
-    float: right;
+    text-align: left;
+
+    float: left;
     /*border: 1px solid red;*/
     transition: all 300ms;
-    margin: 8px 8px;
+    margin: 5px 15px;
     text-decoration: none;
     padding: 5px 5px;
 }
 .menuShoes .menu_sh a:hover{
     transform: scale(1.01);
-    background-color: #F0FFF0;
-    box-shadow: 4px 4px 2px #A9A9A9;
+    background-color: #D3D3D3;
+
 }
 .menuShoes button{
     border: none;
 
     padding: 12px;
 
-    /*background-color: #989494;*/
+    background-color: #ffffff;
     text-align: center;
     color: #8a8a8a;
-    width: 92%;
+    width: 100%;
     font-size: 18px;
 }
 /* Bag  % Wallet */
 .menuBag .menu_bg a{
-    max-width: 300px;
-    text-align: center;
-    width: calc(21% - 35px) ;
-    float: right;
+    text-align: left;
+
+    float: left;
     /*border: 1px solid red;*/
     transition: all 300ms;
-    margin: 8px 8px;
+    margin: 5px 15px;
     text-decoration: none;
     padding: 5px 5px;
 }
 .menuBag .menu_bg a:hover{
     transform: scale(1.01);
-    background-color: #F0FFF0;
-    box-shadow: 4px 4px 2px #A9A9A9;
+    background-color: #D3D3D3;
+
 }
 .menuBag button{
     border: none;
 
     padding: 12px;
 
-    /*background-color: #989494;*/
-    text-align: center;
+    background-color: #ffffff;
+    text-align: left;
     color: #8a8a8a;
-    width: 92%;
+    width: 100%;
     font-size: 18px;
 }
 /* Footer */
@@ -545,13 +542,42 @@ section p span{
 .footer-distributed .footer-center{
     width: 35%;
 }
+.footer-distributed .kinhnhiem{
+    color: #fafafa;
+    width: 300px;
+    line-height: 1.35;
+}
+.footer-distributed .footer-company-name{
+    color: #e89220;
+}
+.footer-distributed .trungtam  ul li{
 
+
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-distributed .footer-links1 a{
+    color: #e89220;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.footer-distributed .footer-links1 a:before{
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+
+
+    display: inline-block;
+    padding-right: 5px;
+}
 .footer-distributed .footer-center i{
     background-color:  #33383b;
     color: #ffffff;
     font-size: 25px;
     width: 38px;
-    height: 38px;
+
     border-radius: 50%;
     text-align: center;
     line-height: 42px;
@@ -597,6 +623,9 @@ section p span{
 .footer-distributed .footer-links .link-1:before{
     content: none;
 }
+.footer-distributed .footer-links1 .link-1:before{
+    content: none;
+}
 
 /* Footer Right */
 .footer-distributed .footer-right{
@@ -605,8 +634,8 @@ section p span{
 
 .footer-distributed .footer-company-about{
     line-height: 20px;
-    color:  #92999f;
-    font-size: 13px;
+    color: #ffffff;
+    font-size: 15px;
     font-weight: normal;
     margin: 0;
 }
@@ -626,7 +655,7 @@ section p span{
 .footer-distributed .footer-icons a{
     display: inline-block;
     width: 35px;
-    height: 35px;
+
     cursor: pointer;
     background-color:  #33383b;
     border-radius: 2px;
@@ -637,45 +666,20 @@ section p span{
     margin-right: 3px;
     margin-bottom: 5px;
 }
-
-/*anh the*/
- .anhmoi .card-h {
-     max-width: 300px;
-     text-align: center;
-     width: calc(21% - 35px) ;
-     float: right;
-     /*border: 1px solid red;*/
-     transition: all 300ms;
-     margin: 8px 8px;
-     text-decoration: none;
-     padding: 5px 5px;
-
+span{
+    color: #fa0000;
 }
-
-.title {
-    color: grey;
-    font-size: 18px;
-}
-
- a:hover {
-    opacity: 0.7;
-}
-.card-h a{
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-}
-
-.card-h img{
+input[name=email] {
+    padding: 12px 0px;
     width: 100%;
-    height: 250px;
 }
-.card-h{
-    line-height: 40px;
+button[type="submit"][class="dangki"] {
+    padding: 12px 5px;
+    background-color: #f1ad07;
+    color: #fafafa;
+    font-weight: 600;
 }
-.anhmoi .card-h:hover{
-    transform: scale(1.01);
-    background-color: #F0FFF0;
-    box-shadow: 4px 4px 2px #A9A9A9;
+button[type="submit"]{
+    background-color: #f1ad07;
 }
 

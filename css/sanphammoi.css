@@ -6,12 +6,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.menuT-Shirt #ao{
+    text-align: center;
+}
 body{
     background-color: #fafafa;
     font-size: 15px;
     font-family: sans-serif;
-     text-align: center;
+
     font-weight: 400;
     line-height: 1.35;
 }
@@ -31,7 +33,7 @@ header{
     height: 70px;
 }
 footer{
-    height: 100px;
+    height: 50px;
     background: rgb(64, 63, 68);
     /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,246,207,1) 0%, rgba(0,212,255,1) 100%);*/
 }
@@ -61,13 +63,16 @@ header  .dautrang p {
 .GIOHANG i{
     line-height: 15px;
     float: right;
-    margin: 15px 0;
+    margin: 15px 5px;
     color: #fa0000;
     border: 10px solid #d7d3d3;
     border-radius: 50px 50px 50px 50px;
     background: #d7d3d3;
 }
-div.GIOHANG:hover  i{
+div.GIOHANG .giohangh:hover  i{
+    transform: scale(1.6);
+}
+div.GIOHANG .longin:hover  i{
     transform: scale(1.6);
 }
 .GIOHANG p{
@@ -139,7 +144,7 @@ nav{
 
 .container{
     margin:  auto;
-    width: auto;
+    width: 1455px;
     float: none;
 }
 
@@ -241,30 +246,30 @@ img{
 
 .menuT-Shirt .menu_ts a{
 
-    text-align: center;
-    width: calc(25% - 80px) ;
-    float: right;
+    text-align: left;
+
+    float: left;
     /*border: 1px solid red;*/
     transition: all 300ms;
-    margin: 8px 0px;
+    margin: 5px 15px;
     text-decoration: none;
     padding: 5px 5px;
 
 }
 .menuT-Shirt .menu_ts a:hover{
 
-    background-color: #e0e5e0;
-    box-shadow: 4px 4px 2px #A9A9A9;
+    background-color: #D3D3D3;
+    /*box-shadow: 4px 4px 2px #A9A9A9;*/
 }
 .menu_ts button{
     border: none;
 
-    padding: 12px;
+    padding: 10px;
 
-    /*background-color: #989494;*/
+    background-color: #ffffff;
     text-align: center;
     color: #8a8a8a;
-    width: 70%;
+    width: 100%;
     font-size: 18px;
 }
 /* Footer */
@@ -330,13 +335,42 @@ img{
 .footer-distributed .footer-center{
     width: 35%;
 }
+.footer-distributed .kinhnhiem{
+    color: #fafafa;
+    width: 300px;
+    line-height: 1.35;
+}
+.footer-distributed .footer-company-name{
+    color: #e89220;
+}
+.footer-distributed .trungtam  ul li{
 
+
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-distributed .footer-links1 a{
+    color: #e89220;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.footer-distributed .footer-links1 a:before{
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+
+
+    display: inline-block;
+    padding-right: 5px;
+}
 .footer-distributed .footer-center i{
     background-color:  #33383b;
     color: #ffffff;
     font-size: 25px;
     width: 38px;
-    height: 38px;
+
     border-radius: 50%;
     text-align: center;
     line-height: 42px;
@@ -382,6 +416,9 @@ img{
 .footer-distributed .footer-links .link-1:before{
     content: none;
 }
+.footer-distributed .footer-links1 .link-1:before{
+    content: none;
+}
 
 /* Footer Right */
 .footer-distributed .footer-right{
@@ -390,8 +427,8 @@ img{
 
 .footer-distributed .footer-company-about{
     line-height: 20px;
-    color:  #92999f;
-    font-size: 13px;
+    color: #ffffff;
+    font-size: 15px;
     font-weight: normal;
     margin: 0;
 }
@@ -411,7 +448,7 @@ img{
 .footer-distributed .footer-icons a{
     display: inline-block;
     width: 35px;
-    height: 35px;
+
     cursor: pointer;
     background-color:  #33383b;
     border-radius: 2px;
@@ -424,4 +461,17 @@ img{
 }
  span{
     color: #fa0000;
+}
+input[name=email] {
+    padding: 12px 0px;
+    width: 100%;
+}
+ button[type="submit"][class="dangki"] {
+    padding: 12px 5px;
+    background-color: #f1ad07;
+    color: #fafafa;
+    font-weight: 600;
+}
+button[type="submit"]{
+    background-color: #f1ad07;
 }
